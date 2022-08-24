@@ -1,0 +1,92 @@
+body {
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  overflow: hidden;
+  margin: 0;
+}
+
+#wrapper {
+  scrollbar-width: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  scrollbar-width: none;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: flex;
+  scrollbar-width: none;
+  overflow: auto;
+  --tree-bg-color: lightgray;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--tree-bg-color);
+  border: 2px solid darkgray;
+
+  min-width: 0;
+  max-width: 50%;
+}
+
+.resizer {
+  flex-basis: 5px;
+
+  position: relative;
+  z-index: 2;
+  cursor: col-resize;
+  background: #333642;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
+
+  background: lightblue;
+  height: 100%;
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#add-content {
+  width: 80px;
+  float: right;
+  background-color: forestgreen;
+}
+
+#remove-content {
+  width: 80px;
+  float: right;
+  background-color: salmon;
+}

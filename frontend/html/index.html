@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--    <script src="qrc:///qtwebchannel/qwebchannel.js"></script>-->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+
+<div id="wrapper">
+    <div id="container">
+        <div id="folder-tree-container" class="sidebar">
+            <ul class="tree tree-root visible">
+                <li>
+                    <folder class="visible">
+                        <icon></icon>
+                        Animals
+                    </folder>
+                    <ul>
+                        <li>
+                            <folder>
+                                <icon></icon>
+                                Birds
+                            </folder>
+                            <ul>
+                                <li>List item 1</li>
+                                <li>List item 2
+                                    <ul>
+                                        <li>List item 2.1</li>
+                                        <li>List item 2.2</li>
+                                        <li>List item 2.3</li>
+                                    </ul>
+                                </li>
+                                <li>List item 3</li>
+                                <li>List item 4</li>
+                                <li>List item 5
+                                    <ul>
+                                        <li>List item 5.1</li>
+                                        <li>List item 5.2
+                                            <ul>
+                                                <li>List item 5.2.1</li>
+                                                <li>List item 5.2.2</li>
+                                                <li>List item 5.2.3</li>
+                                                <li>List item 5.2.4</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>List item 6</li>
+                                <li>List item 7</li>
+                                <li>List item 8</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <folder>
+                                <icon></icon>
+                                Mammals
+                            </folder>
+                            <ul>
+                                <li>
+                                    <folder class="open">
+                                        <icon></icon>
+                                        Elephant
+                                    </folder>
+                                </li>
+                                <li>
+                                    <folder>
+                                        <icon></icon>
+                                        Mouse
+                                    </folder>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <folder>
+                                <icon></icon>
+                                Reptiles
+                            </folder>
+                        </li>
+                    </ul>
+                </li>
+                <li>Plants
+                    <ul>
+                        <li>Flowers
+                            <ul>
+                                <li>Rose</li>
+                                <li>Tulip
+                                    <ul>
+                                        <li>List item 1</li>
+                                        <li>List item 2
+                                            <ul>
+                                                <li>List item 2.1</li>
+                                                <li>List item 2.2</li>
+                                                <li>List item 2.3</li>
+                                            </ul>
+                                        </li>
+                                        <li>List item 3</li>
+                                        <li>List item 4</li>
+                                        <li>List item 5
+                                            <ul>
+                                                <li>List item 5.1</li>
+                                                <li>List item 5.2
+                                                    <ul>
+                                                        <li>List item 5.2.1</li>
+                                                        <li>List item 5.2.2</li>
+                                                        <li>List item 5.2.3</li>
+                                                        <li>List item 5.2.4</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>List item 6</li>
+                                        <li>List item 7</li>
+                                        <li>List item 8</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Trees</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="left-resizer" class="resizer"></div>
+        <div id="main">
+            <p id="main-content"></p>
+        </div>
+        <div id="right-resizer" class="resizer"></div>
+        <div id="action-container" class="sidebar"></div>
+    </div>
+</div>
+
+<script src="../js/resize.js"></script>
+<script src="../js/tree.js"></script>
+</body>
+</html>
