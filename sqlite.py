@@ -1,13 +1,17 @@
 import sqlite3
+from pathlib import Path
 
-from src.data.media import Media
-from src.data.tag import Tag
+from data.media import Media
+from data.tag import Tag
 
 
 class DataBase:
 
     def __init__(self, file_name):
         self.file_name = file_name
+        parent = Path(self.file_name).parent
+        if not parent.exists():
+            parent.mkdir(parents=True)
         self.con = sqlite3.connect(self.file_name)
 
         self.init_tables()

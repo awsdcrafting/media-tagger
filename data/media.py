@@ -3,7 +3,7 @@ from typing import List, Set
 
 from dataclasses_json import dataclass_json
 
-from tag import Tag
+from data.tag import Tag
 
 
 @dataclass_json

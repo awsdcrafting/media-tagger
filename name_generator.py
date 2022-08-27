@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from src.data.media import Media
-from src.data.naming_node import NamingNode
+from data.media import Media
+from data.naming_node import NamingNode
 
 
 class NameGenerator:

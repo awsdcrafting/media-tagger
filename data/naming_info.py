@@ -3,8 +3,8 @@ from typing import Callable, List
 
 from dataclasses_json import dataclass_json
 
-from src.data.media import Media
-from naming_target import NamingTarget, NamingTargetType
+from data.media import Media
+from data.naming_target import NamingTarget, NamingTargetType
 
 
 @dataclass_json
